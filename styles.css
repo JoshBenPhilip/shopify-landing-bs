@@ -1,0 +1,77 @@
+/*Normalizing CSS*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/*site variables her*/
+:root {
+    --purple: #515fbc;
+    --grey-light: #8e99a1;
+    --blue-dark: #1e262f;
+    --white: #fefefe;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+body {
+    /* var is needed to call a variable*/
+    background-color: var(--purple);
+    font-family: 'Roboto', sans-serif;
+    color: var (--white);
+    text-align: center;
+}
+
+main {
+    background: var(--purple);
+}
+
+h1 {
+    font-size: 150px;
+    color: #fefefe;
+}
+
+/* media queries will save you. When changing screens it allows you to change your style at a certain point*/
+@media (min-width:1200px) {
+    h1 {
+        font-size: 20px;
+    }
+    
+}
+
+.btn-primary {
+    
+}
+
+.btn-custom{
+    background-color: var(--blue-dark);
+    border: none;
+}
+
+.btn-custom :hover {
+    background-color: var(--grey-light);
+    color: var(--blue-dark);
+}
+
+.form-custom {
+    width: 200px;
+    margin-right: 10px;
+}
+
+small {
+    line-height: 22px;
+}
+
+.pattern{
+    height: 300px;
+}
+
+
+.img-waves > img {
+    width:100%
+}
